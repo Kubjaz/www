@@ -7,16 +7,25 @@ body {
   font-size: 18px;
   font-weight: 400;
   overflow-x: hidden;
-  color: #707172;
+  color: #1D1D1B;
   background-color: #E30613;
 }
 
 p {
   line-height: 2;
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+.text-uppercase{
+  font-weight: bolder;
 }
 
 a {
   transition: all 0.3s ease;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .container-fluid {
@@ -37,15 +46,15 @@ a {
 }
 
 .tm-color-gray {
-  color: #333;
+  color: #1D1D1B;
 }
 
 .tm-bg-black-transparent {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #1d1d1b7b;
 }
 
 .tm-bg-white-transparent {
-  background-color: rgba(53, 53, 53, 0.5);
+  background-color: #1d1d1b7b;
   border: 1px solid white;
 }
 
