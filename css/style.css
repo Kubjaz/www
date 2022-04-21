@@ -734,7 +734,7 @@ figure.effect-bubba:hover p {
   padding: 0;
   margin: 0;
 
-  text-shadow: 3.5px 3.5px 10px rgb(146, 32, 32);
+  text-shadow: 4px 4px 10px rgb(0, 0, 0);
 }
 
 #ezs{
@@ -742,6 +742,12 @@ figure.effect-bubba:hover p {
   font-weight: bolder;
 
   display: none;
+  font-size: 3.5rem;
+
+  padding: 0;
+  margin: 0;
+
+  text-shadow: 4px 4px 10px rgb(0, 0, 0);
 }
 
 #navrh{
@@ -749,6 +755,12 @@ figure.effect-bubba:hover p {
   font-weight: bolder;
 
   display: none;
+  font-size: 3.5rem;
+
+  padding: 0;
+  margin: 0;
+
+  text-shadow: 4px 4px 10px rgb(0, 0, 0);
 }
 
 .moreinfo{
@@ -790,6 +802,14 @@ figure.effect-bubba:hover p {
   font-weight: 800;
   font-size: x-large;
   color: #0674e3;
+}
+
+.cctvimage {
+  float: right; 
+  margin: 5px;
+  width: 35%;
+  content: url("/img/kamery.png");
+  min-width: 300px;
 }
 
 .cctvtext::before{
