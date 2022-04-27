@@ -17,6 +17,20 @@ p {
   font-weight: bold;
 }
 
+.center-logo{
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.start-background{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/auto.webp);
+}
+
 .text-uppercase{
   font-weight: bolder;
 }
@@ -54,8 +68,9 @@ a {
 }
 
 .tm-bg-white-transparent {
-  background-color: #1d1d1b7b;
+  background-color: #1d1d1b59;
   border: 1px solid white;
+  backdrop-filter: blur(4px);
 }
 
 .tm-color-white{
@@ -139,6 +154,7 @@ a {
   padding-right: 70px;
   width: 500px;
   max-width: 500px;
+  backdrop-filter: blur(4px);
 }
 
 /* Hide scrollbar */
@@ -722,6 +738,7 @@ figure.effect-bubba:hover p {
   color: #cdcecf;
   padding: 0;
   font-weight: normal;
+  margin: 0;
 }
 
 #cctv{
@@ -794,8 +811,8 @@ figure.effect-bubba:hover p {
   text-shadow: 5px 7px 10px rgb(42, 42, 42);
   position: fixed;
 
-  top: 5%;
-  right: 5%;
+  top: 2rem;
+  right: 2.1rem;
 }
 
 .cctvtextfat{
@@ -808,7 +825,23 @@ figure.effect-bubba:hover p {
   float: right; 
   margin: 5px;
   width: 35%;
-  content: url("/img/kamery.png");
+  content: url("/img/kamery.webp");
+  min-width: 300px;
+}
+
+.senzorimage {
+  float: right; 
+  margin: 5px;
+  width: 15%;
+  content: url("/img/senzor.webp");
+  min-width: 150px;
+}
+
+.siteimage {
+  float: right; 
+  margin: 5px;
+  width: 30%;
+  content: url("/img/site.webp");
   min-width: 300px;
 }
 
@@ -817,7 +850,7 @@ figure.effect-bubba:hover p {
 }
 
 .cctvtextodp::before{
-  content: "• ";
+  content: "➤ ";
 }
 
 /* THIS MAKES CUSTOM SCROLLBAR */
@@ -828,7 +861,7 @@ figure.effect-bubba:hover p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #1D1D1B;
+  background: transparent;
 }
 
 /* Handle */
@@ -843,4 +876,45 @@ figure.effect-bubba:hover p {
 
 ::-webkit-scrollbar-corner {
   background-color: transparent;
+}
+
+.jmeno img{
+  height: 5rem;
+  float: left;
+  margin-right: 1rem;
+  border-color: #707172;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+}
+
+.jmeno::after{
+  content: '★★★★☆';
+  margin-left: 3rem;
+  float: right;
+  color: #ff9e20;
+}
+
+.recenze{
+  max-height: 30rem;
+  overflow: scroll;
+}
+
+.recenze1{
+  background-color: rgb(244, 244, 244);
+  padding: 10px;
+  margin: 1rem;
+  border-color: #b8b8b8;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.jmeno{
+  font-weight: 900;
+  color: #0674e3;
+}
+
+.kom-text{
+  margin: 0;
+  padding: 0;
 }

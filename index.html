@@ -7,15 +7,15 @@
 
     <title>Security System Záleský</title>
 
-    <link rel="icon" type="image/png" href="/img/lol.png">
+    <link rel="icon" type="image/png" href="/img/SSZlogo.webp">
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="slick/slick.css"/>    
-    <link rel="stylesheet" href="slick/slick-theme.css"/>    
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="slick/slick.min.css"/>    
+    <link rel="stylesheet" href="slick/slick-theme.min.css"/>    
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -55,7 +55,7 @@
                 </li>
                 <li class="nav-item">
                   <a href="#work" class="nav-link">
-                    <span class="d-inline-block mr-3">Reference</span>
+                    <span class="d-inline-block mr-3">Recenze</span>
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
                 </li>
@@ -91,10 +91,7 @@
           </div>
 
           <main role="main" class="ml-sm-auto col-12">
-            <div
-              class="parallax-window"
-              data-parallax="scroll"
-              data-image-src="img/auto.png">
+            <div class="start-background">
               <div class="tm-section-wrap">
                 <section id="intro" class="tm-section">
                     <div class="tm-bg-white-transparent tm-intro">
@@ -113,7 +110,8 @@
           <div class="tm-section-wrap bg-white">
             <section id="about" class="row tm-section">
               <div class="col-xl-6">
-                <div class="tm-section-half">                         
+                  <div class="tm-double-border-1 tm-border-gray">
+                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">                         
                     <h2 class="tm-section-title tm-color-primary mb-5">O nás</h2>
                     <p class="mb-5">
                       Firma Security System Záleský byla založena za účelem zabezpečení Vašich prostorů.
@@ -122,12 +120,13 @@
                       Provádíme prodej, montáž a odborné poradenství v oboru informačních technologií.
                     </p>
                 </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="tm-section-half">
-                    <img src="img/lol.png" alt="Client Image"/>
                 </div>
               </div>
+              <div class="col-xl-6">
+                <div class="center-logo">
+                  <img src="img/SSZlogo.webp"  alt="Client Image"/>
+                </div>
+                  </div>
             </section>
           </div>
             
@@ -138,7 +137,7 @@
                     <div class="tm-double-border-2 tm-border-gray tm-box-pad">
                         <h1 class="tm-color-primary">CCTV</h1>
                         <p class="mb-5">Potřebujete do vašeho domu, firmy nebo jakéhokoli objektu nainstalovat kvalitní a cennově přístupný kamerový systém?<br>Firma Security System Záleský s.r.o. je tu právě pro Vás!</p>
-                        <p class="tm-color-primary moreinfo" onclick="displayOpen(); displayCCTV()">Více informací zde!</p>
+                        <p class="tm-color-primary moreinfo" onclick="displayOpen(); displayCCTV()">Více informací o CCTV zde!</p>
                     </div>                    
                   </div>                  
                 </div>
@@ -147,16 +146,16 @@
                     <div class="tm-double-border-2 tm-border-gray tm-box-pad">
                       <h1 class="tm-color-primary">EZS/PZTS</h1>
                       <p class="mb-5">Přemýšlíte jaký elektronický zabezpečovací systém do Vašeho domu, bytu a nebo komerčního objektu?<br> Kontaktujte nás a my vám pomůžeme vybrat a nainstalovat!</p>
-                      <p class="tm-color-primary moreinfo" onclick="displayOpen(); displayCCTV()">Více informací zde!</p>
+                      <p class="tm-color-primary moreinfo" onclick="displayOpen(); displayEZS()">Více informací o EZS/PZTS zde!</p>
                     </div>                    
                   </div>                  
                 </div>
                 <div class="col-xl-6 mb-5">
                   <div class="tm-double-border-1 tm-border-gray">
                     <div class="tm-double-border-2 tm-border-gray tm-box-pad">
-                      <h1 class="tm-color-primary">EZS/PZTS</h1>
-                      <p class="mb-5">Přemýšlíte jaký elektronický zabezpečovací systém do Vašeho domu, bytu a nebo komerčního objektu?<br> Kontaktujte nás a my vám pomůžeme vybrat a nainstalovat!</p>
-                      <p class="tm-color-primary moreinfo" onclick="displayOpen(); displayCCTV()">Více informací zde!</p>
+                      <h1 class="tm-color-primary">Slaboproud</h1>
+                      <p class="mb-5">Nabízíme návrh a realizaci slaboproudých rozvodů (LAN, STA).<br> Obraťte se na nás a my vám pomůžeme s návrhem a realizací.</p>
+                      <p class="tm-color-primary moreinfo" onclick="displayOpen(); displaySP()">Více informací o slaboproudu zde!</p>
                     </div>                    
                   </div>                  
                 </div>
@@ -168,43 +167,13 @@
               <div class="col-12">
                 <div class="w-100 tm-double-border-1 tm-border-gray">
                     <div class="tm-double-border-2 tm-border-gray tm-box-pad">
-                      <div class="tm-gallery-wrap">
-                          <h2 class="tm-color-primary tm-section-title mb-4 ml-2">Reference</h2>
-                          <div class="tm-gallery">
-                            <div class="tm-gallery-item">                        
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/kamera.png" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>IP kamery</h2>
-                                  <p></p>
-                                  <a href="img/gallery/large/kamera.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-
-                            <div class="tm-gallery-item">                        
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/pir.png" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Alarmy</h2>
-                                  <p></p>
-                                  <a href="img/gallery/large/pir.png">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-
-                            <div class="tm-gallery-item">                        
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/kabely.png" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Návrh sítí</h2>
-                                  <p></p>
-                                  <a href="img/gallery/large/kabely.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                      </div>                        
-                    </div>                  
+                      <div class="recenze">
+                        <h2 class="tm-color-primary tm-section-title mb-4 ml-2">Recenze</h2>
+                        <div class="recenze1">
+                          <h3 class="jmeno"><img src="img/pfp.png"  alt="pfp"/>Petr J.</h3>
+                          <p class="kom-text">Kubík je velice šikovný a udělal vše absolutně perfektně! 4/5</p>
+                        </div>
+                      </div>      
                   </div>     
               </div>         
             </section>
@@ -261,6 +230,26 @@
                     </div>                    
                   </div>                  
                 </div>
+                <div class="col-xl-6 mb-5">
+                  <div class="tm-double-border-1 tm-border-gray">
+                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">
+                        <h2 class="tm-color-primary tm-section-title mb-4">E-mail</h2>
+                        <p>
+                          Máte otázky nebo zájem o naše služby?
+                        </p>
+                        <form action="mailto:zsystem@email.cz?subject=Kontakt%20p%C5%99es%20web" method="post" enctype="text/plain">
+                          Jméno:<br>
+                          <input type="text" name="Jmeno "><br>
+                          E-mail:<br>
+                          <input type="text" name="E-mail "><br>
+                          Zpráva:<br>
+                          <input type="text" name="Zprava "><br><br>
+                          <input type="submit" value="Poslat">
+                          <input type="reset" value="Vymazat">
+                          </form>
+                    </div>                    
+                  </div>                  
+                </div>
               </section>
           </div>
         </main>        
@@ -271,7 +260,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/templatemo-scripts.js"></script>
+    <script src="js/templatemo-scripts.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
