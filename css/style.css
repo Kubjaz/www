@@ -861,7 +861,7 @@ figure.effect-bubba:hover p {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #0000006b;
 }
 
 /* Handle */
