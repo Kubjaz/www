@@ -900,6 +900,11 @@ figure.effect-bubba:hover p {
   overflow: scroll;
 }
 
+/* Track */
+.recenze::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .recenze1{
   background-color: rgb(244, 244, 244);
   padding: 10px;
