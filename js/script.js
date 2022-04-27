@@ -1,3 +1,11 @@
+function sendMail() {    
+    var zprava = document.getElementById("mailm").value;
+    var podpis = document.getElementById("mailn").value;
+    var predmet = document.getElementById("mails").value;
+
+    window.location.replace(`mailto:zsystem@email.cz?body=${zprava}%0d%0a%0d%0a${podpis}&subject=${predmet}`);    
+}
+
 function displayOpen() {
     document.getElementById("pupupdiv").style.visibility = "visible";
     document.getElementById("pupupdiv").style.opacity = "1";
