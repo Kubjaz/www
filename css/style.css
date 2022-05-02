@@ -29,6 +29,7 @@ p {
   background-size: cover;
   background-position: center;
   background-image: url(../img/auto.webp);
+  object-fit: cover;
 }
 
 .text-uppercase{
@@ -186,8 +187,13 @@ a {
   color: white;
 }
 
-.tm-main-nav {
-  margin-bottom: 160px;
+/* .tm-main-nav {
+  margin-bottom: 40%;
+}
+ */
+footer{
+  position: absolute;
+  bottom: 5px;
 }
 
 .tm-white-rect {
@@ -215,7 +221,7 @@ a {
 
 .tm-main-nav .nav-link:hover {
   animation-name: blinker;
-  animation-duration: 0.5s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -233,7 +239,8 @@ a {
 }
 
 .tm-social-links {
-  margin-bottom: 27px;
+  position: absolute;
+  bottom: 3rem;
 }
 
 .tm-social-link {
@@ -640,9 +647,9 @@ figure.effect-bubba:hover p {
 
   .navbar-toggler {
     display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
+    position: absolute;
+    left: 30vw;
+    top: 2vh;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px 15px;
@@ -650,7 +657,7 @@ figure.effect-bubba:hover p {
     border-radius: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    top: 5px;
+    z-index: 9999999;
   }
 
   .navbar-toggler:focus {
@@ -703,8 +710,14 @@ figure.effect-bubba:hover p {
   }
 }
 
+@media (min-width: 992px) {
+  .moreinfo{
+    display: none;
+  }
+}
+
 .popup{
-  z-index: 9999999;
+  z-index: 999;
   padding: 2rem;
   position: fixed;
   background-color: #1d1d1bfc;

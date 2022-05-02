@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/magnific-popup.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body onload="analytics()">
     <main class="container-fluid">
       <div class="row">        
           <nav id="tmSidebar" class="tm-bg-black-transparent tm-sidebar">
@@ -75,7 +75,7 @@
                     <span class="d-inline-block tm-white-rect"></span>
                   </a>
                 </li>
-                <li class="nav-item">
+               <li class="nav-item">
                   <a href="#clients" class="nav-link">
                     <span class="d-inline-block mr-3">Spolupráce</span>
                     <span class="d-inline-block tm-white-rect"></span>
@@ -92,6 +92,11 @@
                 <li class="nav-item">
                   <a href="https://www.facebook.com/Security-System-Z%C3%A1lesk%C3%BD-110502611529713" class="nav-link tm-social-link">
                     <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link tm-social-link" href="#" style="width: 5rem; padding-left: 1rem; padding-right: 1rem;">
+                    <i id="views" class="far fa-eye"></i>
                   </a>
                 </li>
               </ul>

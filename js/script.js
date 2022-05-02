@@ -86,3 +86,10 @@ function displaySP() {
     $(`<p class="cctvtextodp" id="cctvtext"/>`).text("Pravidelnou revizí slaboproudých elektroinstalací společně předejdeme případným poruchám a škodám.").appendTo(document.getElementById(`pupupdiv`));
     $(`<p class="cctvtextodp" id="cctvtext"/>`).text("Vše pečlivě zkontrolujeme, změříme a odzkoušíme.").appendTo(document.getElementById(`pupupdiv`));
 }
+
+function analytics() {
+    $.getJSON("https://api.ipdata.co/?api-key=c732ada858d34aa937d5281a6edd6f336cdc7b88cbd964f629a498d3", function (json) {
+        document.getElementById("views").innerHTML = " " + json.count;
+        console.log(json.count);
+    });
+}
