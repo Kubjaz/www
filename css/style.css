@@ -710,9 +710,15 @@ figure.effect-bubba:hover p {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .moreinfo{
     display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .moreinfo{
+    display: block;
   }
 }
 
